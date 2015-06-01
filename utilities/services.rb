@@ -1,4 +1,4 @@
-# rtsym:app/viewer_services/[site]_viewer.rb
+# rtsym:app/viewer_services/[_site]_viewer.rb
 #
 # Site Service Object
 # =================
@@ -26,7 +26,7 @@
 # Then you would have the form stored in the `form` variable, and you would only
 # hit the database once for that form.
 #
-class DefaultSiteViewer
+class [Site]Viewer
 
   # We load the site into the class so we can have it in all our methods. If you
   # need access to any other data throughout this service object, load it here.
