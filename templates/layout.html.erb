@@ -1,4 +1,4 @@
-<%# rtsym:app/views/layouts/viewer/default-site.html.erb %>
+<%# rtsym:app/views/layouts/viewer/[site].html.erb %>
 
 <!DOCTYPE html>
 <html>
@@ -8,15 +8,15 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, 
+    <meta name="viewport" content="width=device-width, user-scalable=no,
       minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
 
-    <link href="<%= viewer_image_path('favicon.png') %>" rel="shortcut icon" 
+    <link href="<%= viewer_image_path('favicon.png') %>" rel="shortcut icon"
       type="image/png">
 
-    <%= stylesheet_link_tag 'viewer/default-site/application', :media => 'all' %>
+    <%= stylesheet_link_tag 'viewer/[site]/application', :media => 'all' %>
     <%= javascript_include_tag "modernizr" %>
 
     <%= csrf_meta_tags %>
@@ -28,6 +28,6 @@
       <%= yield %>
     </div>
 
-    <%= javascript_include_tag 'viewer/default-site/application' %>
+    <%= javascript_include_tag 'viewer/[site]/application' %>
   </body>
 </html>
